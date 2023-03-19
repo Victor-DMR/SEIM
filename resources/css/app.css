@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    background-color: #b7aee8;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* Style de la pagina home */
+
+.conte_principal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+h1{
+    font-family: 'Pacifico', cursive;
+    font-size: 230%;
+    margin-bottom: 15%;
+    margin-top: 5%;
+}
+
+.conte_row{
+    width: 100%;
+}
+
+.logo img{
+    width: 50%;
+    margin-bottom: 15%;
+}
+
+.robot-saludo img{
+    width: 50%;
+    margin-top: 15%;
+} 
+
+.link-comenzar{
+    background-color: #d4d4d4;
+    border-radius: 20px;
+    width: 50%;
+    margin: auto;
+}
+
+.link-comenzar a{
+    color: black;
+    font-size: 150%;
+}
+
+@media screen and (max-width: 600px) {
+    .conte_row {
+        margin-top: 5%;
+    }
+} 
+
+/* Style de la pagina login */
+
+.link_google{
+    margin: auto;
+    margin-bottom: 4%;
+    border-radius: 20px;
+    width: 90%;
+    padding: 1.5%;
+    background-color: white;
+}
+
+.link_google a{
+    font-size: 140%;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+.icon_google{
+    width: 8%;
+}
+
+.link_facebook{
+    margin: auto;
+    border-radius: 20px;
+    width: 90%;
+    padding: 2%;
+    background-color: rgb(0, 5, 151);
+
+}
+
+.link_facebook a{
+    font-size: 130%;
+    color: white;
+    text-decoration: none;
+}
+
+.icon_home img{
+    width: 18%;
+    margin-top: 3%;
+}
+
+.icon_home img:hover{
+    cursor: pointer;
+}
+
+.input_registro input{
+    border-radius: 20px;
+    width: 90%;
+    margin: auto;
+    padding: 2%;
+}
+
+/* stile de la pagina tipo de registro */
+
+.text_title{
+    font-size: 160%;
+}
+
+/* Estilos de la pagina registro */
+
+.titulo_del_registro{
+    width: 100%;
+    display: flex;
+    justify-content: center;;
+    /* flex-wrap: wrap; */
+    background-color: antiquewhite;
+}
+
+.titulo_registro{
+
+}
