@@ -21,7 +21,7 @@
                 <div class="row justify-content-center text-center">
                     <div class="col-sm-12">
                         <div class="link-comenzar">
-                            <a href="#">Comenzar</a>
+                            <a href="{{ route('login') }}">Comenzar</a>
                         </div>
                     </div>
                 </div>

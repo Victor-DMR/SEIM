@@ -8,7 +8,7 @@
         <div class="col-sm-12 col-md-6 col-lg-5 col-xl-4">
             <div class="row">
                 <div class="col-sm-12 icon_home">
-                    <img src="{{asset('img/LogoHome.png')}}" alt="">
+                    <a href="{{ route('home') }}"><img src="{{asset('img/LogoHome.png')}}" alt=""></a>
                 </div>
             </div>
             <div class="row text-center">
@@ -45,7 +45,7 @@
             <div class="row text-center mt-4">
                 <div class="col-sm-12 mb-2">
                     <div class="link-comenzar">
-                        <a href="#">Comenzar</a>
+                        <a href="{{ route('tiporegistro')}}">Comenzar</a>
                     </div>
                 </div>
                 <div class="col-sm-12 mt-4">

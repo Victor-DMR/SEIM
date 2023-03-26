@@ -13,9 +13,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
+/* Route::get('/', function () {
     return view('home');
-});
+}); 
 
 Route::get('/login', function () {
     return view('login');
@@ -27,4 +27,10 @@ Route::get('/registro', function () {
 
 Route::get('/tiporegistro', function () {
     return view('tiporegistro');
-});
+}); */
+
+Route::get('/', [\App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/login', [\App\Http\Controllers\HomeController::class, 'login'])->name('login');
+Route::get('/tiporegistro', [\App\Http\Controllers\HomeController::class, 'tiporegistro'])->name('tiporegistro');
+Route::get('/registro-vendedor', [\App\Http\Controllers\HomeController::class, 'registrovendedor'])->name('registrovendedor');
+

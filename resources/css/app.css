@@ -95,12 +95,12 @@ h1{
     text-decoration: none;
 }
 
-.icon_home img{
+.icon_home a img{
     width: 18%;
     margin-top: 3%;
 }
 
-.icon_home img:hover{
+.icon_home  a img:hover{
     cursor: pointer;
 }
 
@@ -117,16 +117,38 @@ h1{
     font-size: 160%;
 }
 
-/* Estilos de la pagina registro */
+/* stile de la pagina registrovendedor */
 
-.titulo_del_registro{
-    width: 100%;
-    display: flex;
-    justify-content: center;;
-    /* flex-wrap: wrap; */
-    background-color: antiquewhite;
+.logo_vendedor img{
+    width: 80px;
 }
 
-.titulo_registro{
-
+.text_vendedor{
+    font-size: 200%;
 }
+
+.select_si_no{
+    border-radius: 50px !important;
+}
+
+.input_vendedor input{
+    border-radius: 50px !important;
+}
+
+@media screen and (min-width: 600px) {
+    .row_logo_title{
+        margin-top: 3%;
+    }
+}
+/* row_logo_title */
+
+@media screen and (max-width: 600px){
+   .logo_vendedor img{
+    width: 60px;
+   } 
+
+   .text_vendedor{
+    margin-top:2%;
+   }
+}
+
