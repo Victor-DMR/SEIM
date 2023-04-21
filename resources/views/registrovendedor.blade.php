@@ -60,7 +60,7 @@
                 <div class="row justify-content-center text-center">
                     <div class="col-sm-12 mb-3 mt-3">
                         <div class="link-comenzar">
-                            <a href="{{-- {{ route('indexvendedor') }} --}}">Continuar</a>
+                            <a href="{{ route('vendedor-perfil') }}">Continuar</a>
                         </div>
                     </div>
                 </div>
