@@ -13,6 +13,24 @@ html, body{
 
 /* Style de la pagina home */
 
+.inputBuscar{
+    background-color: white;
+    border-radius: 50px;
+
+}
+
+.inputBuscar input{
+    width: 90%;
+    height: 30px;
+    border: none;
+    outline: none;
+    text-align: center;
+}
+
+#tituloPrincipal{
+    font-size: 80px;
+}
+
 .conte_principal{
     display: flex;
     justify-content: center;
@@ -312,3 +330,4 @@ h1{
         margin-top: 3%;
     }    
 }
+
