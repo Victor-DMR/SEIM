@@ -16,27 +16,28 @@ html, body{
 .inputBuscar{
     background-color: white;
     border-radius: 50px;
-
 }
 
 .inputBuscar input{
     width: 90%;
-    height: 30px;
+    height: 35px;
     border: none;
     outline: none;
     text-align: center;
+    font-size: 130%;
 }
 
 #tituloPrincipal{
-    font-size: 80px;
+    font-size: 450%;
     color: white;
+    font-family: 'Concert One', cursive;
 }
 
 .text-white{
     color: white;
 }
 
-.categoria{
+.categoriaenhome{
     background-color: white;
     height: 120px;
     display: flex;
@@ -45,15 +46,15 @@ html, body{
     flex-wrap: wrap;
 }
 
-.categoria img{
+.categoriaenhome img{
     width: 70px;
     height: 70px;
     border-radius: 50%;
     padding: 2%;
-    border: 2px solid black;
+    border: 2px solid black !important;
 }
 
-.categoria p{
+.categoriaenhome p{
     font-size: 70%;
     width: 100%;
     text-align: center;
@@ -111,7 +112,26 @@ h1{
     .conte_row {
         margin-top: 5%;
     }
+
+    #tituloPrincipal{
+        font-size: 300%;
+    }
+
+    #logprimary{
+        width: 40%;
+    }
 } 
+
+@media screen and (max-width: 991px) {
+    #logprimary{
+        width: 25%;
+    }
+
+    .registrate{
+        position: absolute;
+        left: -2px;
+    }
+}
 
 /* Style de la pagina login */
 
@@ -212,8 +232,8 @@ h1{
 }
 
 .btn_menu svg{
-    color: #5a4f95;
-    border: 2px solid #5a4f95;
+    color: #b2a4ff;
+    border: 2px solid #b2a4ff;
 }
 
 .logouser{
@@ -222,7 +242,7 @@ h1{
 }
 
 .logouser{
-    color: #5a4f95;
+    color: #b2a4ff;
 }
 
 .portada{
@@ -328,6 +348,10 @@ h1{
     top: -5%
 }
 
+.bgconten{
+    background-color: #594f9594;
+}
+
 @media screen and (max-width: 600px) {
     .portada{
         width: 100%;
@@ -359,6 +383,10 @@ h1{
         height: 80px;
         border-radius: 50%;
     }
+
+    .bgconten{
+        background-color: #3f1457;
+    }
 }
 
 @media screen and (min-width: 601px) {
@@ -367,3 +395,49 @@ h1{
     }    
 }
 
+
+/*Estilos de la pagina Buscar*/
+.tamaño{
+    width: 7rem;
+    margin-bottom: 5%;
+    }
+.presentacion {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 40px;  
+}
+
+.contenido {
+    border-radius: 30px;
+    width: 100%;
+    margin: auto;
+    margin-bottom: 2%;
+}
+
+.tamaño_logo {
+    position: relative;
+    width: 90px;
+    height: 90px;
+    border-radius: 50px;
+    padding: 2%;
+}
+
+.informacion {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+}
+
+.informacion span {
+    margin-bottom: 3px;
+}
+
+.centrarfoto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+}

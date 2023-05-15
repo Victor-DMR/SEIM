@@ -14,7 +14,7 @@
             <div class="row text-center">
                 <div class="col-sm-12">
                     <div class="logo">
-                        <img src="{{asset('img/LogoSEIM.png')}}" alt="">
+                        <img src="{{asset('img/LogoSEIM2.png')}}" alt="">
                     </div>
                 </div>
             </div>
@@ -45,11 +45,11 @@
             <div class="row text-center mt-4">
                 <div class="col-sm-12 mb-2">
                     <div class="link-comenzar">
-                        <a href="{{ route('tiporegistro')}}">Comenzar</a>
+                        <a href="{{ route('vendedor-perfil') }}">Comenzar</a>
                     </div>
                 </div>
                 <div class="col-sm-12 mt-4">
-                    <p>¿No tienes cuenta?<a class="text-primary" href="">Regístrate aquí</a></p>
+                    <p class="text-white">¿No tienes cuenta?<a class="text-primary" href="{{ route('registrovendedor') }}">Regístrate aquí</a></p>
                 </div>
             </div>
         </div>

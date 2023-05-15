@@ -5,7 +5,7 @@
 @section('content')
 <div class="content conte_principal">
     <div class="conte_row row justify-content-center">
-        <div class="col-sm-12 col-md-6 col-lg-5 col-xl-4">
+        <div class="col-sm-12 col-md-6 col-lg-5 col-xl-4 bgconten">
             <div class="row text-center">
                 <div class="col-12 topconten">
                     <div class="row">
@@ -24,14 +24,14 @@
                             </ul>
                         </div>
                         <div class="col-4 logoenperfilvendedor">
-                            <img src="{{asset('img/LogoSEIM.png')}}" alt="">
+                            <img src="{{asset('img/LogoSEIM2.png')}}" alt="">
                         </div>
                         <div class="col-4 btn-group">
                             <svg type="button" data-bs-toggle="dropdown" data-bs-auto-close="true" aria-expanded="false" xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-person-circle logouser" viewBox="0 0 16 16">
                                 <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
                                 <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
                             </svg>
-                            <ul class="dropdown-menu">
+                            <ul class="dropdown-menu dropdown-menu-end">
                                 <li><a class="dropdown-item" href="#">Usuario:Ejemplo@gmail.com</a></li>
                                 <li><a class="dropdown-item" href="#">Cambiar Email</a></li>
                                 <li><a class="dropdown-item" href="#">Cambiar Contraseña</a></li>
@@ -51,26 +51,26 @@
                     </div>
                     <div class="row conteinfoperfil">
                         <div class="col-12">
-                            <p><strong>TEALA </strong><span>(peluqueria)</span></p>
+                            <p class="text-white "><strong>TEALA </strong><span>(peluqueria)</span></p>
                         </div>
                         <div class="col-12">
-                            <p>"Somos una peluqueria que vela por tu vienestar fisico"</p>
+                            <p class="text-white">"Somos una peluqueria que vela por tu vienestar fisico"</p>
                         </div>
                         <div class="col-12 mt-3">
                             <div class="row">
-                                <div class="col-4">
+                                <div class="col-4 text-white">
                                     peinados
                                 </div>
-                                <div class="col-4">
+                                <div class="col-4 text-white">
                                     Tratamientos
                                 </div>
-                                <div class="col-4">
+                                <div class="col-4 text-white">
                                     Cortes
                                 </div>
                             </div>
                         </div>
                         <div class="col-12">
-                            <p class="textcenternone"><span>Fotos</span></p>
+                            <p class="textcenternone text-white"><span>Fotos</span></p>
                         </div>
                         <div class="col-12">
                             <div class="row justify-content-center">
@@ -89,7 +89,7 @@
                             </div>
                         </div>
                         <div class="col-12">
-                            <p class="textcenternone"><span>Calificación</span> 5.0</p>
+                            <p class="textcenternone text-white"><span>Calificación</span> 5.0</p>
                             <div class="numstar">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-star-fill starfill" viewBox="0 0 16 16">
                                     <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
@@ -116,8 +116,8 @@
                                       </svg>
                                 </div>
                                 <div class="col-10">
-                                    <strong>!TE OFRESCO MIS SERVICIO¡</strong>
-                                  <p>si me escojes podras disfrutar de muchos veneficios</p>
+                                    <strong class="text-white">!TE OFRESCO MIS SERVICIO¡</strong>
+                                  <p class="text-white">si me escojes podras disfrutar de muchos veneficios</p>
                                 </div>
                             </div>
                         </div>
@@ -129,7 +129,7 @@
                             </div>
                             <div class="col-4">
                                 <div class="icon_regresar">
-                                    <a href="{{ route('login') }}"><img src="{{asset('img/IconoRegresar.PNG')}}" alt=""></a>
+                                    <a href="{{ route('home') }}"><img src="{{asset('img/LogoHome.PNG')}}" alt=""></a>
                                 </div>
                             </div>
                             <div class="col-4 sms">

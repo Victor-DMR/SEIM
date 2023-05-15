@@ -14,11 +14,11 @@ class HomeController extends Controller
         return view('login');
     }
 
-    public function tiporegistro(){
-        return view('tiporegistro');
+    public function busqueda(){
+        return view('busqueda');
     }
 
     public function registrovendedor(){
-        return view('registrovendedor');
+        return view('vendedor.registrovendedor');
     }
 }
