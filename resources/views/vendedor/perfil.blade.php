@@ -15,9 +15,6 @@
                               </svg>
                             <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="#">Inicio</a></li>
-                            <li><a class="dropdown-item" href="#">Configuración</a></li>
-                            <li><a class="dropdown-item" href="#">Notificaciones</a></li>
-                            <li><a class="dropdown-item" href="#">Seguridad</a></li>
                             <li><a class="dropdown-item" href="#">Centro de información</a></li>
                             <li><a class="dropdown-item" href="#">Reportar un problema</a></li>
                             <li><a class="dropdown-item" href="#">Ayuda</a></li>
@@ -33,8 +30,7 @@
                             </svg>
                             <ul class="dropdown-menu dropdown-menu-end">
                                 <li><a class="dropdown-item" href="#">Usuario:Ejemplo@gmail.com</a></li>
-                                <li><a class="dropdown-item" href="#">Cambiar Email</a></li>
-                                <li><a class="dropdown-item" href="#">Cambiar Contraseña</a></li>
+                                <li><a class="dropdown-item" href="{{ route('editarperfil') }}">Editar perfil</a></li>
                                 <li><a class="dropdown-item" href="#">Cerrar Sesión</a></li>
                             </ul>
                         </div>

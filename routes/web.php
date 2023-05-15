@@ -33,8 +33,10 @@ Route::get('/tiporegistro', function () {
 Route::get('/', [\App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('/login', [\App\Http\Controllers\HomeController::class, 'login'])->name('login');
 Route::get('/busqueda', [\App\Http\Controllers\HomeController::class, 'busqueda'])->name('busqueda');
-Route::get('/registro-vendedor', [\App\Http\Controllers\HomeController::class, 'registrovendedor'])->name('registrovendedor');
+
 
 /* rutas de vendedor */
+Route::get('/registro-vendedor', [\App\Http\Controllers\HomeController::class, 'registrovendedor'])->name('registrovendedor');
 Route::get('perfin-vendedor', [\App\Http\Controllers\VendedorController::class, 'perfil'])->name('vendedor-perfil');
+Route::get('/editar-perfil', [\App\Http\Controllers\VendedorController::class, 'editarPerfil'])->name('editarperfil');
 

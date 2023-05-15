@@ -13,4 +13,8 @@ class VendedorController extends Controller
     public function perfil(){
         return view('vendedor.perfil');
     }
+
+    public function editarPerfil(){
+        return view('vendedor.editarperfil');
+    }
 }
