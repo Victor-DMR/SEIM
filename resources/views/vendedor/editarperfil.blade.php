@@ -8,7 +8,7 @@
         <div class="col-sm-12 col-md-6 col-lg-5 col-xl-4">
             <div class="row text-center">
                 <div class="col-sm-12">
-                    <div class="logo">
+                    <div class="logoedit">
                         <img src="{{asset('img/LogoSEIM2.png')}}" alt="">
                     </div>
                 </div>
@@ -23,6 +23,9 @@
                     <label class="text-white mb-1" for="correo">Contraseña</label>
                     <br>
                     <input type="password" class="form-control" id="exampleInputPassword1">
+                    <br>
+                    <label class="text-white mb-1" for="">Nombre</label>
+                    <input type="text">
                 </div>
             </div>
             <div class="row text-center mt-4">
