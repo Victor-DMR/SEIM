@@ -47,15 +47,15 @@ html, body{
 }
 
 .categoriaenhome img{
-    width: 70px;
-    height: 70px;
+    width: 80px;
+    height: 80px;
     border-radius: 50%;
-    padding: 2%;
+    padding: 1%;
     border: 2px solid black !important;
 }
 
 .categoriaenhome p{
-    font-size: 70%;
+    font-size: 100%;
     width: 100%;
     text-align: center;
 }
@@ -398,9 +398,19 @@ h1{
 
 /*Estilos de la pagina Buscar*/
 .tamaño{
-    width: 7rem;
+    width: 10rem;
     margin-bottom: 5%;
     }
+
+.tamañologo{
+    width: 70px;
+    margin-bottom: 5%;
+}
+
+.tamañologo:hover{
+    cursor: pointer;
+}
+
 .presentacion {
     display: flex;
     align-items: center;

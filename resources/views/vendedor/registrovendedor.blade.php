@@ -48,6 +48,15 @@
                         <input type="text" class="form-control" id="" aria-describedby="emailHelp">
                     </div>
                     <div class="col-sm-12 input_vendedor mb-4">
+                        <label class="text-dark mb-1 text-white " for="correo">Que categoria pertenece</label>
+                        <br>
+                        <select class="form-select select_si_no" aria-label="Default select example">
+                            <option selected>Selecione</option>
+                            <option value="Si">Moda</option>
+                            <option value="No">Belleza</option>
+                        </select>
+                    </div>
+                    <div class="col-sm-12 input_vendedor mb-4">
                         <label class="text-dark mb-1 text-white " for="correo">Esta su negocio registrado en la camara de comercio</label>
                         <br>
                         <select class="form-select select_si_no" aria-label="Default select example">

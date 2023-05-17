@@ -36,15 +36,15 @@
                     <div class="col-12 mt-5">
                         <p class="text-white">Categorias disponibles</p>
                             <div class="row ">
-                                <div class="col-6 col-md-2 pt-2  col-lg-2 categoriaenhome ">
+                                <div class="col-6 col-md-6 pt-2  col-lg-6 categoriaenhome ">
                                     <img src="{{ asset('img/portada.jpg') }}" alt="">
-                                    <p>Peluqueria</p>
+                                    <p>Moda</p>
                                 </div>
-                                <div class="col-6 col-md-2 pt-2  col-lg-2 categoriaenhome ">
+                                <div class="col-6 col-md-6 pt-2  col-lg-6 categoriaenhome ">
                                     <img src="{{ asset('img/portada.jpg') }}" alt="">
-                                    <p>Barberia</p>
+                                    <p>Belleza</p>
                                 </div>
-                                <div class="col-6 col-md-2 pt-2  col-lg-2 categoriaenhome ">
+                                {{-- <div class="col-6 col-md-2 pt-2  col-lg-2 categoriaenhome ">
                                     <img src="{{ asset('img/portada.jpg') }}" alt="">
                                     <p>Cuidado facial y corporal</p>
                                 </div>
@@ -59,7 +59,7 @@
                                 <div class="col-6 col-md-2 pt-2  col-lg-2 categoriaenhome ">
                                     <img src="{{ asset('img/portada.jpg') }}" alt="">
                                     <p>Articulos de belleza</p>
-                                </div>
+                                </div> --}}
                             </div>
                     </div>
                     <div class="col-12 politicas">

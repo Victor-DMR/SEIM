@@ -7,6 +7,7 @@
 
     <!-- Prefetch -->
     <link rel="prefetch" href="nosotros.html" as="document">
+    <link rel="shortcut icon" href="{{ asset('img/LogoSEIM2.png') }}" type="image/x-icon">
 
     <!-- Preload -->
     <link rel="preload" href="css/normalize.css" as="style">
