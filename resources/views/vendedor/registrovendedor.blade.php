@@ -18,37 +18,47 @@
                 </div>
                 <div class="row">
                     <div class="col-sm-12 input_vendedor mb-4">
-                        <label class="text-dark mb-1 text-white " for="correo">Nombre del propietario</label>
+                        <label class="mb-1 text-white " for="correo">Nombre del propietario</label>
                         <br>
                         <input type="text" class="form-control" id="" aria-describedby="emailHelp">
                     </div>
                     <div class="col-sm-12 input_vendedor mb-4">
-                        <label class="text-dark mb-1 text-white " for="correo">Numero de cedula</label>
+                        <label class="mb-1 text-white " for="correo">Numero de cedula</label>
                         <br>
                         <input type="number" class="form-control" id="" aria-describedby="emailHelp">
                     </div>
                     <div class="col-sm-12 input_vendedor mb-4">
-                        <label class="text-dark mb-1 text-white " for="correo">Correo electronico</label>
+                        <label class="mb-1 text-white " for="correo">Correo electronico</label>
                         <br>
                         <input type="email" class="form-control" id="" aria-describedby="emailHelp">
                     </div>
                     <div class="col-sm-12 input_vendedor mb-4">
-                        <label class="text-dark mb-1 text-white " for="correo">Contraseña</label>
+                        <label class="mb-1 text-white " for="correo">Contraseña</label>
                         <br>
                         <input type="password" class="form-control" id="" aria-describedby="emailHelp">
                     </div>
                     <div class="col-sm-12 input_vendedor mb-4">
-                        <label class="text-dark mb-1 text-white " for="correo">Nombre del negocio</label>
+                        <label class="mb-1 text-white " for="correo">Nombre del negocio</label>
                         <br>
                         <input type="text" class="form-control" id="" aria-describedby="emailHelp">
                     </div>
                     <div class="col-sm-12 input_vendedor mb-4">
-                        <label class="text-dark mb-1 text-white " for="correo">Producto y/o servicio que ofrece</label>
+                        <label class=" mb-1 text-white" for="correo">Categoria a la que pertenece</label>
+                        <br>
+                        <select class="form-select select_si_no" aria-label="Default select example">
+                            <option selected>Selecione</option>
+                            <option value="Si">Moda</option>
+                            <option value="No">Belleza</option>
+                            <option value="No">Ambos</option>
+                        </select>
+                    </div>
+                    <div class="col-sm-12 input_vendedor mb-4">
+                        <label class="mb-1 text-white " for="correo">Producto y/o servicio que ofrece</label>
                         <br>
                         <input type="text" class="form-control" id="" aria-describedby="emailHelp">
                     </div>
                     <div class="col-sm-12 input_vendedor mb-4">
-                        <label class="text-dark mb-1 text-white " for="correo">Esta su negocio registrado en la camara de comercio</label>
+                        <label class="mb-1 text-white " for="correo">Esta su negocio registrado en la camara de comercio</label>
                         <br>
                         <select class="form-select select_si_no" aria-label="Default select example">
                             <option selected>Selecione</option>
@@ -57,7 +67,7 @@
                         </select>
                     </div>
                     <div class="col-sm-12 input_vendedor mb-4">
-                        <label class="text-dark mb-1 text-white " for="correo">Numero de registro</label>
+                        <label class="mb-1 text-white " for="correo">Numero de registro</label>
                     <br>
                     <input type="number" class="form-control" id="" aria-describedby="emailHelp">
                 </div>

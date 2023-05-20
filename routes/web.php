@@ -37,6 +37,8 @@ Route::get('/busqueda', [\App\Http\Controllers\HomeController::class, 'busqueda'
 
 /* rutas de vendedor */
 Route::get('/registro-vendedor', [\App\Http\Controllers\HomeController::class, 'registrovendedor'])->name('registrovendedor');
-Route::get('perfin-vendedor', [\App\Http\Controllers\VendedorController::class, 'perfil'])->name('vendedor-perfil');
+Route::get('/perfin-vendedor', [\App\Http\Controllers\VendedorController::class, 'perfil'])->name('vendedor-perfil');
 Route::get('/editar-perfil', [\App\Http\Controllers\VendedorController::class, 'editarPerfil'])->name('editarperfil');
+Route::get('/informacion', [\App\http\controllers\VendedorController::class, 'informacion'])->name('informacion');
+
 

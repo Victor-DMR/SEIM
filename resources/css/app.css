@@ -1,24 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-html, body{
+html,
+body {
     background-color: #3f1457;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 /* Style de la pagina home */
 
-.inputBuscar{
+.inputBuscar {
     background-color: white;
     border-radius: 50px;
 }
 
-.inputBuscar input{
+.inputBuscar input {
     width: 90%;
     height: 35px;
     border: none;
@@ -27,17 +28,17 @@ html, body{
     font-size: 130%;
 }
 
-#tituloPrincipal{
+#tituloPrincipal {
     font-size: 450%;
     color: white;
     font-family: 'Concert One', cursive;
 }
 
-.text-white{
+.text-white {
     color: white;
 }
 
-.categoriaenhome{
+.categoriaenhome {
     background-color: white;
     height: 120px;
     display: flex;
@@ -46,28 +47,28 @@ html, body{
     flex-wrap: wrap;
 }
 
-.categoriaenhome img{
-    width: 70px;
-    height: 70px;
+.categoriaenhome img {
+    width: 80px;
+    height: 80px;
     border-radius: 50%;
-    padding: 2%;
+    padding: 1%;
     border: 2px solid black !important;
 }
 
-.categoriaenhome p{
+.categoriaenhome p {
     font-size: 70%;
     width: 100%;
     text-align: center;
 }
 
-.conte_principal{
+.conte_principal {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
 }
 
-.politicas{
+.politicas {
     background-color: white !important;
     display: flex;
     justify-content: end;
@@ -75,35 +76,35 @@ html, body{
     top: 150px;
 }
 
-h1{
+h1 {
     font-family: 'Pacifico', cursive;
     font-size: 230%;
     margin-bottom: 15%;
     margin-top: 5%;
 }
 
-.conte_row{
+.conte_row {
     width: 100%;
 }
 
-.logo img{
+.logo img {
     width: 50%;
     margin-bottom: 15%;
 }
 
-.robot-saludo img{
+.robot-saludo img {
     width: 50%;
     margin-top: 15%;
-} 
+}
 
-.link-comenzar{
+.link-comenzar {
     background-color: #d4d4d4;
     border-radius: 20px;
     width: 50%;
     margin: auto;
 }
 
-.link-comenzar a{
+.link-comenzar a {
     color: black;
     font-size: 150%;
 }
@@ -113,21 +114,21 @@ h1{
         margin-top: 5%;
     }
 
-    #tituloPrincipal{
+    #tituloPrincipal {
         font-size: 300%;
     }
 
-    #logprimary{
+    #logprimary {
         width: 40%;
     }
-} 
+}
 
 @media screen and (max-width: 991px) {
-    #logprimary{
+    #logprimary {
         width: 25%;
     }
 
-    .registrate{
+    .registrate {
         position: absolute;
         left: -2px;
     }
@@ -135,7 +136,7 @@ h1{
 
 /* Style de la pagina login */
 
-.link_google{
+.link_google {
     margin: auto;
     margin-bottom: 4%;
     border-radius: 20px;
@@ -144,17 +145,17 @@ h1{
     background-color: white;
 }
 
-.link_google a{
+.link_google a {
     font-size: 140%;
     color: rgb(0, 0, 0);
     text-decoration: none;
 }
 
-.icon_google{
+.icon_google {
     width: 8%;
 }
 
-.link_facebook{
+.link_facebook {
     margin: auto;
     border-radius: 20px;
     width: 90%;
@@ -163,22 +164,22 @@ h1{
 
 }
 
-.link_facebook a{
+.link_facebook a {
     font-size: 130%;
     color: white;
     text-decoration: none;
 }
 
-.icon_home a img{
+.icon_home a img {
     width: 18%;
     margin-top: 3%;
 }
 
-.icon_home  a img:hover{
+.icon_home a img:hover {
     cursor: pointer;
 }
 
-.input_registro input{
+.input_registro input {
     border-radius: 20px;
     width: 90%;
     margin: auto;
@@ -187,43 +188,44 @@ h1{
 
 /* stile de la pagina tipo de registro */
 
-.text_title{
+.text_title {
     font-size: 160%;
 }
 
 /* stile de la pagina registrovendedor */
 
-.logo_vendedor img{
+.logo_vendedor img {
     width: 80px;
 }
 
-.text_vendedor{
+.text_vendedor {
     font-size: 200%;
 }
 
-.select_si_no{
+.select_si_no {
     border-radius: 50px !important;
 }
 
-.input_vendedor input{
+.input_vendedor input {
     border-radius: 50px !important;
 }
 
 @media screen and (min-width: 600px) {
-    .row_logo_title{
+    .row_logo_title {
         margin-top: 3%;
     }
 }
+
 /* row_logo_title */
 
-@media screen and (max-width: 600px){
-   .logo_vendedor img{
-    width: 60px;
-   } 
+@media screen and (max-width: 600px) {
+    .logo_vendedor img {
+        width: 60px;
+    }
 
-   .text_vendedor{
-    margin-top:2%;
-   }
+    .text_vendedor {
+        margin-top: 2%;
+    }
 }
 
 /* Style de la pagina perfil vendedor */
@@ -231,36 +233,36 @@ h1{
     position: relative;
 }
 
-.btn_menu svg{
+.btn_menu svg {
     color: #b2a4ff;
     border: 2px solid #b2a4ff;
 }
 
-.logouser{
+.logouser {
     position: relative;
     left: 65%;
 }
 
-.logouser{
+.logouser {
     color: #b2a4ff;
 }
 
-.portada{
+.portada {
     width: 100%;
-    height:250px;
+    height: 250px;
 }
 
-.portada img{
+.portada img {
     max-width: 100%;
     max-height: 100%;
 }
 
-.perfil{
+.perfil {
     width: 150px;
     height: 150px;
     position: relative;
     left: 35%;
-    top: -80px; 
+    top: -80px;
 }
 
 .perfil img {
@@ -270,45 +272,45 @@ h1{
     border: 10px solid rgb(219, 219, 219);
 }
 
-.textcenternone{
+.textcenternone {
     text-align: left;
     margin-top: 5% !important;
 }
 
-.textcenternone span{
+.textcenternone span {
     background-color: #ababab;
     width: 15%;
     padding: 1% 2%;
     border-radius: 50px;
 }
 
-.fotosdeproducto img{
+.fotosdeproducto img {
     width: 100%;
     height: 13vb;
     border-radius: 50%;
 }
 
-.numstar{
+.numstar {
     text-align: left;
     margin-left: 2%;
 }
 
-.starfill{
+.starfill {
     color: rgb(182, 182, 3);
 }
 
-.aviso{
+.aviso {
     margin-top: 3%;
     background-color: #ababab;
     border-radius: 30px;
 }
 
-.altavos svg{
+.altavos svg {
     position: relative;
     top: 17%;
 }
 
-.gps svg{
+.gps svg {
     background-color: #ababab;
     padding: 10%;
     border-radius: 100px;
@@ -316,11 +318,11 @@ h1{
     left: -25%;
 }
 
-.gps svg:hover{
+.gps svg:hover {
     cursor: pointer;
 }
 
-.sms svg{
+.sms svg {
     background-color: #ababab;
     padding: 10%;
     border-radius: 100px;
@@ -328,47 +330,47 @@ h1{
     left: 50%;
 }
 
-.sms svg:hover{
+.sms svg:hover {
     cursor: pointer;
 }
 
-.icon_regresar img{
+.icon_regresar img {
     width: 40%;
     position: relative;
     left: 10%;
 }
 
-.logoenperfilvendedor img{
+.logoenperfilvendedor img {
     width: 55px;
     height: 50px;
 }
 
-.conteinfoperfil{
+.conteinfoperfil {
     position: relative;
     top: -5%
 }
 
-.bgconten{
+.bgconten {
     background-color: #594f9594;
 }
 
 @media screen and (max-width: 600px) {
-    .portada{
+    .portada {
         width: 100%;
-        height:250px;
+        height: 250px;
     }
 
-    .portada img{
+    .portada img {
         max-width: 100%;
         min-height: 100%;
     }
 
-    .perfil{
+    .perfil {
         width: 180px;
         height: 180px;
         position: relative;
         left: 29%;
-        top: -10%; 
+        top: -10%;
     }
 
     .perfil img {
@@ -378,35 +380,36 @@ h1{
         border: 10px solid rgb(219, 219, 219);
     }
 
-    .fotosdeproducto img{
+    .fotosdeproducto img {
         width: 80px;
         height: 80px;
         border-radius: 50%;
     }
 
-    .bgconten{
+    .bgconten {
         background-color: #3f1457;
     }
 }
 
 @media screen and (min-width: 601px) {
-    .topconten{
+    .topconten {
         margin-top: 3%;
-    }    
+    }
 }
 
 
 /*Estilos de la pagina Buscar*/
-.tamaño{
+.tamaño {
     width: 7rem;
     margin-bottom: 5%;
-    }
+}
+
 .presentacion {
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: white;
-    border-radius: 40px;  
+    border-radius: 40px;
 }
 
 .contenido {
@@ -434,10 +437,31 @@ h1{
     margin-bottom: 3px;
 }
 
-.centrarfoto{
+.centrarfoto {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
 
+}
+
+/*Estilos centro-informacion*/
+
+
+.respuestas {
+    color: aliceblue;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.titulo_principal {
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.titulo_preguntas {
+    color: black;
+}
+
+.contacto {
+    color: white;
 }

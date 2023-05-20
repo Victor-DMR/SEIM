@@ -16,7 +16,7 @@
                         <h4 class="text-white">SEIM</h4>
                         <div class="row">
                             <div class="col-md-11 col-sm-11 col-lg-11 inputBuscar">
-                                <input type="text" placeholder="¿Qúe estás nececitando?">
+                                <input type="text" placeholder="¿Qúe estás necesitando?">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
                                     <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
                                 </svg>
@@ -36,15 +36,15 @@
                     <div class="col-12 mt-5">
                         <p class="text-white">Categorias disponibles</p>
                             <div class="row ">
-                                <div class="col-6 col-md-2 pt-2  col-lg-2 categoriaenhome ">
+                                <div class="col-6 col-md-6 pt-2  col-lg-6 categoriaenhome ">
                                     <img src="{{ asset('img/portada.jpg') }}" alt="">
                                     <p>Peluqueria</p>
                                 </div>
-                                <div class="col-6 col-md-2 pt-2  col-lg-2 categoriaenhome ">
+                                <div class="col-6 col-md-6 pt-2  col-lg-6 categoriaenhome ">
                                     <img src="{{ asset('img/portada.jpg') }}" alt="">
                                     <p>Barberia</p>
                                 </div>
-                                <div class="col-6 col-md-2 pt-2  col-lg-2 categoriaenhome ">
+                                {{-- <div class="col-6 col-md-2 pt-2  col-lg-2 categoriaenhome ">
                                     <img src="{{ asset('img/portada.jpg') }}" alt="">
                                     <p>Cuidado facial y corporal</p>
                                 </div>
@@ -59,7 +59,7 @@
                                 <div class="col-6 col-md-2 pt-2  col-lg-2 categoriaenhome ">
                                     <img src="{{ asset('img/portada.jpg') }}" alt="">
                                     <p>Articulos de belleza</p>
-                                </div>
+                                </div> --}}
                             </div>
                     </div>
                     <div class="col-12 politicas">
