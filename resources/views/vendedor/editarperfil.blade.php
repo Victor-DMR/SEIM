@@ -44,11 +44,11 @@
             <div class="row text-center mt-4">
                 <div class="col-sm-12 mb-2">
                     <div class="link-comenzar">
-                        <a href="{{ route('vendedor-perfil') }}">Confirmar</a>
+                        <a href="{{ route('perfil-vendedor') }}">Confirmar</a>
                     </div>
                 </div>
                 <div class="col-sm-12 mt-4">
-                    <p class="text-white">No editar datos <a class="text-primary" href="{{ route('vendedor-perfil') }}">Click aqui</a></p>
+                    <p class="text-white">No editar datos <a class="text-primary" href="{{ route('perfil-vendedor') }}">Click aqui</a></p>
                 </div>
             </div>
         </div>

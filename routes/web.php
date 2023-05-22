@@ -37,7 +37,9 @@ Route::get('/busqueda', [\App\Http\Controllers\HomeController::class, 'busqueda'
 
 /* rutas de vendedor */
 Route::get('/registro-vendedor', [\App\Http\Controllers\HomeController::class, 'registrovendedor'])->name('registrovendedor');
-Route::get('/perfin-vendedor', [\App\Http\Controllers\VendedorController::class, 'perfil'])->name('vendedor-perfil');
+Route::post('/guardar', [\App\Http\Controllers\VendedorController::class, 'guardarvendedor'])->name('guardar');
+Route::post('validarlogin', [\App\Http\Controllers\VendedorController::class, 'validarlogin'])->name('validarlogin');
+Route::get('/perfil-vendedor', [\App\Http\Controllers\VendedorController::class, 'perfil'])->name('perfil-vendedor');
 Route::get('/editar-perfil', [\App\Http\Controllers\VendedorController::class, 'editarPerfil'])->name('editarperfil');
 Route::get('/informacion', [\App\http\controllers\VendedorController::class, 'informacion'])->name('informacion');
 

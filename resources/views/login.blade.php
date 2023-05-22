@@ -31,23 +31,26 @@
                     </div>
                 </div>
             </div>
+            <form action="{{ route('validarlogin') }}" method="POST">
+                @csrf
             <div class="row text-center mb-5">
                 <div class="col-sm-12 input_registro">
-                    <label class="text-white mb-1" for="correo">Correo electronico  / Telefono</label>
+                    <label class="text-white mb-1" for="correo">Correo electronico</label>
                     <br>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <input name="email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
                     <br>
                     <label class="text-white mb-1" for="correo">Contraseña</label>
                     <br>
-                    <input type="password" class="form-control" id="exampleInputPassword1">
+                    <input name="password" type="password" class="form-control" id="exampleInputPassword1">
                 </div>
             </div>
             <div class="row text-center mt-4">
                 <div class="col-sm-12 mb-2">
                     <div class="link-comenzar">
-                        <a href="{{ route('vendedor-perfil') }}">Comenzar</a>
+                        <button type="submit" class="btn form-control">Comenzar</button>
                     </div>
                 </div>
+            </form>
                 <div class="col-sm-12 mt-4">
                     <p class="text-white">¿No tienes cuenta?<a class="text-primary" href="{{ route('registrovendedor') }}">Regístrate aquí</a></p>
                 </div>
