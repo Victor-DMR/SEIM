@@ -47,11 +47,7 @@ body {
     flex-wrap: wrap;
 }
 
-<<<<<<< HEAD
 .categoriaenhome img {
-=======
-.categoriaenhome img{
->>>>>>> 05192ffa99ca8f9021e6af05761c6ddd29f7dcdc
     width: 80px;
     height: 80px;
     border-radius: 50%;
@@ -59,13 +55,8 @@ body {
     border: 2px solid black !important;
 }
 
-<<<<<<< HEAD
 .categoriaenhome p {
     font-size: 70%;
-=======
-.categoriaenhome p{
-    font-size: 100%;
->>>>>>> 05192ffa99ca8f9021e6af05761c6ddd29f7dcdc
     width: 100%;
     text-align: center;
 }
@@ -408,24 +399,9 @@ h1 {
 
 
 /*Estilos de la pagina Buscar*/
-<<<<<<< HEAD
 .tamaño {
     width: 7rem;
     margin-bottom: 5%;
-=======
-.tamaño{
-    width: 10rem;
-    margin-bottom: 5%;
-    }
-
-.tamañologo{
-    width: 70px;
-    margin-bottom: 5%;
-}
-
-.tamañologo:hover{
-    cursor: pointer;
->>>>>>> 05192ffa99ca8f9021e6af05761c6ddd29f7dcdc
 }
 
 .presentacion {
