@@ -59,7 +59,7 @@
                     </div>
                 </div>
                 <div class="pt-5 text-center">
-                    <img class="tamaño" src="{{ asset('img/LogoHome.png') }}" alt="">
+                    <a href="{{ route('home') }}"><img class="tamañologo" src="{{ asset('img/LogoHome.png') }}" alt=""></a>
                 </div>
             </div>
         </div>

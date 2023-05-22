@@ -38,11 +38,11 @@
                             <div class="row ">
                                 <div class="col-6 col-md-6 pt-2  col-lg-6 categoriaenhome ">
                                     <img src="{{ asset('img/portada.jpg') }}" alt="">
-                                    <p>Peluqueria</p>
+                                    <p>Moda</p>
                                 </div>
                                 <div class="col-6 col-md-6 pt-2  col-lg-6 categoriaenhome ">
                                     <img src="{{ asset('img/portada.jpg') }}" alt="">
-                                    <p>Barberia</p>
+                                    <p>Belleza</p>
                                 </div>
                                 {{-- <div class="col-6 col-md-2 pt-2  col-lg-2 categoriaenhome ">
                                     <img src="{{ asset('img/portada.jpg') }}" alt="">
