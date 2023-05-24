@@ -9,7 +9,7 @@
 
     <!-- Prefetch -->
     <link rel="prefetch" href="nosotros.html" as="document">
-    <link rel="shortcut icon" href="{{ asset('img/LogoSEIM2.png') }}" type="image/x-icon">
+    <link rel="shortcut icon" href="{{ asset('img/LogoSEIM2.webp') }}" type="image/x-icon">
 
     <!-- Preload -->
     <link rel="preload" href="css/normalize.css" as="style">
@@ -32,4 +32,5 @@
     @yield('content')
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </html>

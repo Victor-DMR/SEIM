@@ -23,7 +23,7 @@
             <div class="row text-center mt-4">
                 <div class="col-sm-12 mb-2">
                     <div class="icon_home">
-                        <a href="{{ route('login') }}"><img src="{{asset('img/IconoRegresar.PNG')}}" alt=""></a>
+                        <a href="{{ route('login') }}"><img src="{{asset('img/IconoRegresar.webp')}}" alt=""></a>
                     </div>
                 </div>
             </div>

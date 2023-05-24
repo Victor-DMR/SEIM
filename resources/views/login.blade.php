@@ -3,22 +3,22 @@
 @section('title', 'Login')
 
 @section('content')
-<div class="content conte_principal">
-    <div class="conte_row row justify-content-center">
-        <div class="col-sm-12 col-md-6 col-lg-5 col-xl-4">
-            <div class="row">
-                <div class="col-sm-12 icon_home">
-                    <a href="{{ route('home') }}"><img src="{{asset('img/LogoHome.png')}}" alt=""></a>
-                </div>
-            </div>
-            <div class="row text-center">
-                <div class="col-sm-12">
-                    <div class="logo">
-                        <img src="{{asset('img/LogoSEIM2.png')}}" alt="">
+    <div class="content conte_principal">
+        <div class="conte_row row justify-content-center">
+            <div class="col-sm-12 col-md-6 col-lg-5 col-xl-4">
+                <div class="row">
+                    <div class="col-sm-12 icon_home">
+                        <a href="{{ route('home') }}"><img src="{{ asset('img/LogoHome.webp ') }}" alt=""></a>
                     </div>
                 </div>
-            </div>
-            <div class="row text-center mb-5">
+                <div class="row text-center">
+                    <div class="col-sm-12">
+                        <div class="logo">
+                            <img src="{{ asset('img/LogoSEIM2.webp ') }}" alt="">
+                        </div>
+                    </div>
+                </div>
+                {{-- <div class="row text-center mb-5">
                 <div class="col-sm-12">
                     <div class="link_google"> 
                         <a href="#"><img class="icon_google" src="{{asset('img/icon_de_google.png')}}" alt="">&nbsp;Continuar con Google</a>
@@ -30,32 +30,48 @@
                            &nbsp;Continuar con Facebook</a>
                     </div>
                 </div>
-            </div>
-            <form action="{{ route('validarlogin') }}" method="POST">
-                @csrf
-            <div class="row text-center mb-5">
-                <div class="col-sm-12 input_registro">
-                    <label class="text-white mb-1" for="correo">Correo electronico</label>
-                    <br>
-                    <input name="email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                    <br>
-                    <label class="text-white mb-1" for="correo">Contraseña</label>
-                    <br>
-                    <input name="password" type="password" class="form-control" id="exampleInputPassword1">
-                </div>
-            </div>
-            <div class="row text-center mt-4">
-                <div class="col-sm-12 mb-2">
-                    <div class="link-comenzar">
-                        <button type="submit" class="btn form-control">Comenzar</button>
+            </div> --}}
+                <form action="{{ route('validarlogin') }}" method="POST">
+                    @csrf
+                    <div class="row text-center mb-5">
+                        <div class="col-sm-12 input_registro">
+                            <label class="text-white mb-1" for="correo">Correo electronico</label>
+                            <br>
+                            <input required name="email" type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                            <br>
+                            <label class="text-white mb-1" for="correo">Contraseña</label>
+                            <br>
+                            <input required name="password" type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
                     </div>
-                </div>
-            </form>
+                    <div class="row text-center mt-4">
+                        <div class="col-sm-12 mb-2">
+                            <div class="link-comenzar">
+                                <button type="submit" class="btn form-control">Comenzar</button>
+                            </div>
+                        </div>
+                </form>
                 <div class="col-sm-12 mt-4">
-                    <p class="text-white">¿No tienes cuenta?<a class="text-primary" href="{{ route('registrovendedor') }}">Regístrate aquí</a></p>
+                    <p class="text-white">¿No tienes cuenta?<a class="text-primary"
+                            href="{{ route('registrovendedor') }}">Regístrate aquí</a></p>
                 </div>
             </div>
         </div>
     </div>
-</div> 
+    </div>
+
+    @isset($aler)
+        <script>
+            window.addEventListener("DOMContentLoaded", () => {
+                Swal.fire(
+                    'Lo sentimos',
+                    'El usuario no existe',
+                    'error'
+                )
+            })
+            
+        </script>
+    @endisset
+    
 @endsection()

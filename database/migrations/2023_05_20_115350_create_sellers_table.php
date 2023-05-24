@@ -18,6 +18,7 @@ return new class extends Migration
             $table->string('email', 100);
             $table->string('password', 100);
             $table->string('namestore', 100);
+            $table->string('ubicacion', 100);
             $table->string('category', 100);
             $table->string('productservice', 100);
             $table->string('optiontrade', 50);

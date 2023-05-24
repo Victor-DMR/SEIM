@@ -13,6 +13,9 @@ body {
 }
 
 /* Style de la pagina home */
+.btn-shearch{
+    border: none;
+}
 
 .inputBuscar {
     background-color: white;

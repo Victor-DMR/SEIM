@@ -32,11 +32,10 @@ Route::get('/tiporegistro', function () {
 /* rutas principales */
 Route::get('/', [\App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('/login', [\App\Http\Controllers\HomeController::class, 'login'])->name('login');
-Route::get('/busqueda', [\App\Http\Controllers\HomeController::class, 'busqueda'])->name('busqueda');
-
 
 /* rutas de vendedor */
-Route::get('/registro-vendedor', [\App\Http\Controllers\HomeController::class, 'registrovendedor'])->name('registrovendedor');
+Route::get('/busqueda', [\App\Http\Controllers\VendedorController::class, 'busqueda'])->name('busqueda');
+Route::get('/registro-vendedor', [\App\Http\Controllers\VendedorController::class, 'registrovendedor'])->name('registrovendedor');
 Route::post('/guardar', [\App\Http\Controllers\VendedorController::class, 'guardarvendedor'])->name('guardar');
 Route::post('validarlogin', [\App\Http\Controllers\VendedorController::class, 'validarlogin'])->name('validarlogin');
 Route::get('/perfil-vendedor', [\App\Http\Controllers\VendedorController::class, 'perfil'])->name('perfil-vendedor');

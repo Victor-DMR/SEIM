@@ -2,8 +2,6 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
-
 class HomeController extends Controller
 {
     public function index(){
@@ -14,11 +12,4 @@ class HomeController extends Controller
         return view('login');
     }
 
-    public function busqueda(){
-        return view('busqueda');
-    }
-
-    public function registrovendedor(){
-        return view('vendedor.registrovendedor');
-    }
 }

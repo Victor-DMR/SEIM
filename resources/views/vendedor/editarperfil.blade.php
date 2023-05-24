@@ -9,7 +9,7 @@
             <div class="row text-center">
                 <div class="col-sm-12">
                     <div class="logoedit">
-                        <img src="{{asset('img/LogoSEIM2.png')}}" alt="">
+                        <img src="{{asset('img/LogoSEIM2.webp')}}" alt="">
                     </div>
                 </div>
             </div>
@@ -36,14 +36,9 @@
                     <br>
                     <input type="password" class="form-control" id="exampleInputPassword1">
                     <br>
-<<<<<<< HEAD
                     <label class="text-white mb-1" for="correo">Confirmar contraseña</label>
                     <br>
                     <input type="password" class="form-control" id="exampleInputPassword1">
-=======
-                    <label class="text-white mb-1" for="">Nombre</label>
-                    <input type="text">
->>>>>>> 05192ffa99ca8f9021e6af05761c6ddd29f7dcdc
                 </div>
             </div>
             <div class="row text-center mt-4">
