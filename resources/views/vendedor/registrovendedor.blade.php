@@ -16,7 +16,7 @@
                         <h2 class="text_title text-white text_vendedor mb-5">Registrarse cómo Vendedor</h2>
                     </div>
                 </div>
-                <form action="{{ route('guardar') }}" method="POST">
+                <form action="{{ route('guardar') }}" method="POST" enctype="multipart/form-data">
                     @csrf
                     <div class="row">
                         <div class="col-sm-12 input_vendedor mb-4">
@@ -28,6 +28,11 @@
                             <label class="mb-1 text-white " for="correo">Numero de cedula</label>
                             <br>
                             <input required name="cc" type="number" class="form-control" id="" aria-describedby="emailHelp">
+                        </div>
+                        <div class="col-sm-12 input_vendedor mb-4">
+                            <label class="mb-1 text-white " for="correo">Numero celular</label>
+                            <br>
+                            <input required name="phone" type="number" class="form-control" id="" aria-describedby="emailHelp">
                         </div>
                         <div class="col-sm-12 input_vendedor mb-4">
                             <label class="mb-1 text-white " for="correo">Correo electronico</label>
@@ -56,8 +61,18 @@
                                 <option selected disabled>Selecione</option>
                                 <option value="Moda">Moda</option>
                                 <option value="Belleza">Belleza</option>
-                                <option value="Ambos">Ambos</option>
+                                <option value="Moda, Belleza">Ambos</option>
                             </select>
+                        </div>
+                        <div class="col-sm-12 input_vendedor mb-4">
+                            <label class="mb-1 text-white " for="correo">Imagen de portada</label>
+                            <br>
+                            <input required name="imgportada" type="file" class="form-control" id="" aria-describedby="emailHelp">
+                        </div>
+                        <div class="col-sm-12 input_vendedor mb-4">
+                            <label class="mb-1 text-white " for="correo">Imagen de perfil</label>
+                            <br>
+                            <input required name="imgperfil" type="file" class="form-control" id="" aria-describedby="emailHelp">
                         </div>
                         <div class="col-sm-12 input_vendedor mb-4">
                             <label class="mb-1 text-white " for="correo">Producto y/o servicio que ofrece</label>
@@ -100,5 +115,15 @@
             </div>
         </div>
     </div>
-
+    @isset($aler)
+        <script>
+            window.addEventListener("DOMContentLoaded", () => {
+                Swal.fire(
+                    'Lo sentimos',
+                    'El correo ya esta registrado',
+                    'error'
+                )
+            })
+        </script>
+    @endisset
 @endsection

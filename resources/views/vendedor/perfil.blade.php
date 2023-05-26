@@ -8,67 +8,71 @@
             <div class="col-sm-12 col-md-6 col-lg-5 col-xl-4 bgconten">
                 <div class="row text-center">
                     <div class="col-12 topconten">
-                        <div class="row">
-                            <div class="col-4 btn-group btn_menu">
-                                <svg type="button" data-bs-toggle="dropdown" data-bs-auto-close="true" aria-expanded="false"
-                                    xmlns="http://www.w3.org/2000/svg" width="45" height="35" fill="currentColor"
-                                    class="bi bi-list" viewBox="0 0 16 16">
-                                    <path fill-rule="evenodd"
-                                        d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
-                                </svg>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">Inicio</a></li>
-                                    <li><a class="dropdown-item" href="#">Centro de información</a></li>
-                                    <li><a class="dropdown-item" href="#">Reportar un problema</a></li>
-                                    <li><a class="dropdown-item" href="#">Ayuda</a></li>
-                                </ul>
+                        @isset($datos)
+                            <div class="row">
+                                <div class="col-4 btn-group btn_menu">
+                                    <svg type="button" data-bs-toggle="dropdown" data-bs-auto-close="true" aria-expanded="false"
+                                        xmlns="http://www.w3.org/2000/svg" width="45" height="35" fill="currentColor"
+                                        class="bi bi-list" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                                    </svg>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Inicio</a></li>
+                                        <li><a class="dropdown-item" href="#">Centro de información</a></li>
+                                        <li><a class="dropdown-item" href="#">Reportar un problema</a></li>
+                                        <li><a class="dropdown-item" href="#">Ayuda</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-4 logoenperfilvendedor">
+                                    <img src="{{ asset('img/LogoSEIM2.webp') }}" alt="">
+                                </div>
+                                <div class="col-4 btn-group">
+                                    <svg type="button" data-bs-toggle="dropdown" data-bs-auto-close="true"
+                                        aria-expanded="false" xmlns="http://www.w3.org/2000/svg" width="45" height="45"
+                                        fill="currentColor" class="bi bi-person-circle logouser" viewBox="0 0 16 16">
+                                        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+                                        <path fill-rule="evenodd"
+                                            d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
+                                    </svg>
+                                    <ul class="dropdown-menu dropdown-menu-end">
+                                        <li><a class="dropdown-item" href="#">Usuario: {{ $vendedors->email }}</a></li>
+                                        <li><a class="dropdown-item" href="{{ route('editarperfil') }}">Editar perfil</a></li>
+                                        <li><a class="dropdown-item" href="#">Cerrar Sesión</a></li>
+                                    </ul>
+                                </div>
                             </div>
-                            <div class="col-4 logoenperfilvendedor">
-                                <img src="{{ asset('img/LogoSEIM2.webp') }}" alt="">
-                            </div>
-                            <div class="col-4 btn-group">
-                                <svg type="button" data-bs-toggle="dropdown" data-bs-auto-close="true"
-                                    aria-expanded="false" xmlns="http://www.w3.org/2000/svg" width="45" height="45"
-                                    fill="currentColor" class="bi bi-person-circle logouser" viewBox="0 0 16 16">
-                                    <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
-                                    <path fill-rule="evenodd"
-                                        d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
-                                </svg>
-                                <ul class="dropdown-menu dropdown-menu-end">
-                                    <li><a class="dropdown-item" href="#">Usuario:Ejemplo@gmail.com</a></li>
-                                    <li><a class="dropdown-item" href="{{ route('editarperfil') }}">Editar perfil</a></li>
-                                    <li><a class="dropdown-item" href="#">Cerrar Sesión</a></li>
-                                </ul>
-                            </div>
-                        </div>
+                        @endisset
                     </div>
                 </div>
                 <div class="row text-center mb-5 mt-3 justify-content-center">
                     <div class="col-12">
                         <div class="portada">
-                            <img src="{{ asset('img/portada.webp') }}" alt="img portada">
+                            <img src="{{ asset( $vendedors->imgportada ) }}" alt="img portada">
                         </div>
+                        
                         <div class="perfil">
-                            <img src="{{ asset('img/portada2.webp') }}" alt="img portada">
+                            <img src="{{ asset( $vendedors->imgperfil ) }}" alt="img portada">
                         </div>
                         <div class="row conteinfoperfil">
                             <div class="col-12">
-                                <p class="text-white "><strong>TEALA </strong><span>(peluqueria)</span></p>
+                                <p class="text-white "><strong> {{ $vendedors->name }}
+                                    </strong><span>({{ $vendedors->namestore }})</span></p>
                             </div>
                             <div class="col-12">
-                                <p class="text-white">"Somos una peluqueria que vela por tu vienestar fisico"</p>
+                                <p class="text-white">Categoria "{{ $vendedors->category }}"</p>
                             </div>
                             <div class="col-12 mt-3">
                                 <div class="row">
-                                    <div class="col-4 text-white">
-                                        peinados
+                                    <div class="col-12 text-white">
+                                        {{ $vendedors->productservice }}
                                     </div>
-                                    <div class="col-4 text-white">
+                                    {{-- <div class="col-4 text-white">
                                         Tratamientos
                                     </div>
                                     <div class="col-4 text-white">
                                         Cortes
-                                    </div>
+                                    </div> --}}
                                 </div>
                             </div>
                             <div class="col-12">
@@ -135,56 +139,41 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="row mt-4">
-                                <div class="col-4 gps">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60"
-                                        fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
-                                        <path
-                                            d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
-                                    </svg>
-                                </div>
-                                <div class="col-4">
-                                    <div class="icon_regresar">
-                                        <a href="{{ route('home') }}"><img src="{{ asset('img/LogoHome.webp') }}"
-                                                alt=""></a>
+                            @isset($mostrar)
+                                <div class="row mt-4">
+                                    <div class="col-4 gps">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60"
+                                            fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                                            <path
+                                                d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
+                                        </svg>
+                                    </div>
+
+                                    <div class="col-4">
+                                        <div class="icon_regresar">
+                                            <a href="{{ route('home') }}"><img src="{{ asset('img/LogoHome.webp') }}"
+                                                    alt=""></a>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-4 sms">
+                                        <a href="https://api.whatsapp.com/send?phone=57{{ $vendedors->phone }}"
+                                            target="_blank">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60"
+                                                fill="currentColor" class="bi bi-chat-dots" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M5 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" />
+                                                <path
+                                                    d="m2.165 15.803.02-.004c1.83-.363 2.948-.842 3.468-1.105A9.06 9.06 0 0 0 8 15c4.418 0 8-3.134 8-7s-3.582-7-8-7-8 3.134-8 7c0 1.76.743 3.37 1.97 4.6a10.437 10.437 0 0 1-.524 2.318l-.003.011a10.722 10.722 0 0 1-.244.637c-.079.186.074.394.273.362a21.673 21.673 0 0 0 .693-.125zm.8-3.108a1 1 0 0 0-.287-.801C1.618 10.83 1 9.468 1 8c0-3.192 3.004-6 7-6s7 2.808 7 6c0 3.193-3.004 6-7 6a8.06 8.06 0 0 1-2.088-.272 1 1 0 0 0-.711.074c-.387.196-1.24.57-2.634.893a10.97 10.97 0 0 0 .398-2z" />
+                                            </svg>
+                                        </a>
                                     </div>
                                 </div>
-                                <div class="col-4 sms">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60"
-                                        fill="currentColor" class="bi bi-chat-dots" viewBox="0 0 16 16">
-                                        <path
-                                            d="M5 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" />
-                                        <path
-                                            d="m2.165 15.803.02-.004c1.83-.363 2.948-.842 3.468-1.105A9.06 9.06 0 0 0 8 15c4.418 0 8-3.134 8-7s-3.582-7-8-7-8 3.134-8 7c0 1.76.743 3.37 1.97 4.6a10.437 10.437 0 0 1-.524 2.318l-.003.011a10.722 10.722 0 0 1-.244.637c-.079.186.074.394.273.362a21.673 21.673 0 0 0 .693-.125zm.8-3.108a1 1 0 0 0-.287-.801C1.618 10.83 1 9.468 1 8c0-3.192 3.004-6 7-6s7 2.808 7 6c0 3.193-3.004 6-7 6a8.06 8.06 0 0 1-2.088-.272 1 1 0 0 0-.711.074c-.387.196-1.24.57-2.634.893a10.97 10.97 0 0 0 .398-2z" />
-                                    </svg>
-                                </div>
-                            </div>
+                            @endisset
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        @isset($registro)
-            <script>
-                window.addEventListener("DOMContentLoaded", () => {
-                    const Toast = Swal.mixin({
-                        toast: true,
-                        position: 'top-end',
-                        showConfirmButton: false,
-                        timer: 2000,
-                        timerProgressBar: true,
-                        didOpen: (toast) => {
-                            toast.addEventListener('mouseenter', Swal.stopTimer)
-                            toast.addEventListener('mouseleave', Swal.resumeTimer)
-                        }
-                    })
-
-                    Toast.fire({
-                        icon: 'success',
-                        title: 'Registro exitoso'
-                    })
-                })
-            </script>
-        @endisset
     </div>
 @endsection()

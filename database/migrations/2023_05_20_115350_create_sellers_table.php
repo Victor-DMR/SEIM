@@ -15,11 +15,14 @@ return new class extends Migration
             $table->id();
             $table->string('name', 100);
             $table->string('cc', 15);
+            $table->string('phone', 15);
             $table->string('email', 100);
             $table->string('password', 100);
             $table->string('namestore', 100);
             $table->string('ubicacion', 100);
             $table->string('category', 100);
+            $table->string('imgportada', 200);
+            $table->string('imgperfil', 200);
             $table->string('productservice', 100);
             $table->string('optiontrade', 50);
             $table->string('numberrecord', 50);

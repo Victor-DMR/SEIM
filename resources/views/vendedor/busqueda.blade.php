@@ -16,24 +16,28 @@
                         <h2 class="text-white">ENCONTRAMOS ESTOS RESULTADOS PARA TI</h2>
                     </div>
                     <div>
-                        @foreach($busquedas as $busqueda)
-                            <div class="row bg-white contenido">
-                                <div class="col-3 centrarfoto">
-                                    <img class="tamaño_logo" src="{{ asset('img/portada.webp') }}" alt="">
-                                </div> 
-                                <div class="col-9">
-                                    <div class="informacion">
-                                        <span><strong>{{ $busqueda->namestore }}</strong></span>
-                                        <span>{{ $busqueda->name }}</span>
-                                        <span>{{ $busqueda->ubicacion }}</span>
+                        @foreach ($busquedas as $busqueda)
+                            <form action="{{ route('perfil-vendedor') }}">
+                                <input name="id" type="text" hidden value="{{ $busqueda->id }}">
+                                <button class="row bg-white contenido">
+                                    <div class="col-3 centrarfoto">
+                                        <img class="tamaño_logo" src="{{ asset('img/portada.webp') }}" alt="">
                                     </div>
-                                </div>
-                            </div>
+                                    <div class="col-9">
+                                        <div class="informacion">
+                                            <span><strong>{{ $busqueda->namestore }}</strong></span>
+                                            <span>{{ $busqueda->name }}</span>
+                                            <span>{{ $busqueda->ubicacion }}</span>
+                                        </div>
+                                    </div>
+                                </button>
+                            </form>
                         @endforeach
                     </div>
                 </div>
                 <div class="pt-5 text-center">
-                    <a href="{{ route('home') }}"><img class="tamañologo" src="{{ asset('img/LogoHome.png') }}" alt=""></a>
+                    <a href="{{ route('home') }}"><img class="tamañologo" src="{{ asset('img/LogoHome.png') }}"
+                            alt=""></a>
                 </div>
             </div>
         </div>
